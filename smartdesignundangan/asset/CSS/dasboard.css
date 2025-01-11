@@ -1,0 +1,109 @@
+/* Navbar */
+.navbar {
+  background-color: #222;
+  color: #fff;
+  padding: 30px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center; /* Pusatkan elemen secara vertikal */
+  justify-content: center; /* Awalnya memusatkan semua elemen */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  position: relative; /* Membuat elemen anak bisa diatur posisinya */
+}
+
+.navbar h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  position: absolute; /* Membuat tulisan terpisah dari menu */
+  left: 20px; /* Tetap berada di kiri */
+  top: 25%; /* Pusatkan secara vertikal */
+  transform: translateY(-50%); /* Koreksi posisi agar benar-benar di tengah */
+}
+
+.navbar nav ul {
+  list-style: none;
+  display: flex;
+  gap: 80px; /* Memberi jarak antar menu */
+  margin: 0;
+  justify-content: center; /* Pusatkan menu */
+  align-items: center; /* Pusatkan menu secara vertikal */
+}
+
+.navbar nav ul li {
+  display: inline-block;
+}
+
+.navbar nav ul li a {
+  text-decoration: none;
+  color: #ff621f;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.navbar nav ul li a:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
+/* Tambahkan tombol logout di pojok kanan */
+.navbar .logout {
+  position: absolute; /* Pisahkan dari elemen lainnya */
+  right: 20px; /* Letakkan di pojok kanan */
+  top: 50%; /* Pusatkan secara vertikal */
+  transform: translateY(-50%); /* Koreksi posisi agar benar-benar di tengah */
+  text-decoration: none;
+  color: #ff621f;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.navbar .logout:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* Content styling */
+.content {
+  padding: 20px;
+  margin-top: 10px;
+}
+
+.content h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #ff621f;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: #e55d1a;
+}

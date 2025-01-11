@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "DM-Serif-Display", sans-serif;
+}
+
+.background {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../img/daftar.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.form-box {
+  position: relative;
+  width: 400px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.inputbox {
+  position: relative;
+  margin: 15px 0;
+}
+
+.inputbox label {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  color: #ffffff;
+  font-size: 1em;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.inputbox input {
+  width: 100%;
+  height: 45px;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  border-bottom: 2px solid #ff621f;
+}
+
+.inputbox input:focus ~ label,
+.inputbox input:valid ~ label {
+  top: -0px;
+  font-size: 0.95em;
+}
+
+.password-box {
+  position: relative;
+}
+
+.icon-eye {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #ff621f;
+}
+
+.password-match-icon {
+  position: absolute;
+  right: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.icon-check {
+  color: green;
+}
+
+.icon-x {
+  color: red;
+}
+
+.hide {
+  display: none;
+}
+
+button {
+  width: 100%;
+  height: 40px;
+  border-radius: 20px;
+  background: #ff621f;
+  border: none;
+  cursor: pointer;
+  font-size: 1em;
+  color: white;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.login-link {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.login-link p {
+  color: white;
+  font-size: 0.9em;
+}
+
+.login-link a {
+  color: #ff621f;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}

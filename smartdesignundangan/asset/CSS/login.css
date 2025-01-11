@@ -1,0 +1,227 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "DM-Serif-Display", sans-serif;
+}
+
+.background {
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.background video {
+  position: fixed;
+  object-fit: cover;
+  width: 100%;
+  height: 150%;
+}
+
+.form-box {
+  position: relative;
+  width: 500px;
+  height: 450px;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #ff621f;
+  border-radius: 20px;
+  backdrop-filter: blur(15px);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.form-value {
+  position: fixed;
+}
+
+h2 {
+  font-size: 3rem;
+  color: #ffffff;
+  text-align: center;
+  line-height: 1.3;
+}
+
+.brand {
+  color: #ff621f;
+  font-size: 2rem;
+}
+
+.backhome {
+  position: absolute;
+  top: 15px;
+  right: 10px;
+}
+
+.backhome a {
+  color: #ff621f;
+  font-size: 1.5em;
+}
+
+.backhome a:hover {
+  color: #ffffff;
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 450px) {
+  .backhome {
+    top: 10px;
+    left: 10px;
+  }
+
+  .backhome a {
+    font-size: 1.2em;
+  }
+}
+
+.inputbox {
+  position: relative;
+  margin: 30px 10px;
+  width: 450px;
+  border-bottom: 2px solid #ff621f;
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+.inputbox input {
+  width: 100%;
+  height: 50px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  padding: 0 35px 0 5px;
+  color: rgb(255, 255, 255);
+  position: relative;
+  z-index: 1;
+}
+
+.inputbox label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  color: #ffffff;
+  font-size: 1em;
+  pointer-events: none;
+  transition: 0.5s; /* Animasi untuk label */
+}
+
+input:focus ~ label,
+input:valid ~ label {
+  top: -0px;
+  font-size: 0.95em;
+  color: #ff621f;
+}
+
+.inputbox p {
+  position: absolute;
+  right: 8px;
+  color: white;
+  font-size: 1.2em;
+  top: 20px;
+}
+
+/* Icon untuk input box */
+.inputbox i {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #ff621f;
+  font-size: 1.2em;
+  z-index: 0;
+  transition: 0.3s;
+}
+
+input:focus ~ i {
+  color: #ffffff;
+}
+
+.forget {
+  margin: -15px 0 15px;
+  font-size: 0.9em;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.forget a {
+  font-weight: 600;
+  margin-left: 1rem;
+  justify-content: center;
+  color: rgb(0, 0, 0);
+}
+
+.forget label input {
+  margin-right: 5px;
+}
+
+.forget a {
+  color: #ff621f;
+  text-decoration: none;
+}
+
+.forget a:hover {
+  text-decoration: underline;
+  color: #ffffff;
+}
+
+button {
+  width: 100%;
+  height: 40px;
+  border-radius: 40px;
+  background: #ff621f;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: 600;
+  transition: background 0.3s ease-in-out;
+}
+
+button:hover {
+  background: #e5561d; /* Warna berubah saat dihover */
+}
+
+.register {
+  font-size: 0.9em;
+  color: white;
+  text-align: center;
+  margin: 25px 0 10px;
+}
+
+.register p a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+
+.register p a:hover {
+  text-decoration: underline;
+  color: #c0c0c0;
+}
+
+/* laptop */
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+/* tablet */
+@media (max-width: 758px) {
+  html {
+    font-size: 62.5%;
+  }
+}
+
+/* mobilephone */
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+}
